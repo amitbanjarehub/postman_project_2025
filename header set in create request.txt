@@ -1,0 +1,108 @@
+homepage.jsx contain this
+
+const handleAddRequest = (id) => {
+    // Add new file to the folder's files array
+    const newFile = {
+      id: new Date().getTime(), // Unique file id based on timestamp
+      name: newFileName || "New Request", // Default name if empty
+      method: newMethodName || "GET",
+      items: [
+        {
+          apiMethod: "GET", // Default values for Postman details
+          url: "",
+          headers: [],
+          urlText: "",
+          bodyType: "none",
+          authoriziedType: "noAuth",
+          authData: {},
+          rawType: "JSON",
+          jsonData: {},
+          headerParamsRows: [],
+          headerHiddenRows: [],
+          bodyFormData: [],
+          bodyEncoddedRows: [],
+          responseData: {},
+          paramsMenu: false,
+          authorizationMenu: false,
+          headersMenu: false,
+          bodyMenu: true,
+          scriptsMenu: false,
+          settingsMenu: false,
+        },
+      ],
+    };
+
+1.homepage.jsx me  headerHiddenRows: [], me ye data
+
+headerHiddenRows:[
+          {
+            id: generateUniqueId(),
+            key: "Cache-Control",
+            value: "no-cache",
+            description: "",
+            checked: true,
+          },
+          {
+            id: generateUniqueId(),
+            key: "VertexSuite-Token",
+            value: "<calculated when request is sent>",
+            description: "",
+            checked: true,
+          },
+          {
+            id: generateUniqueId(),
+            key: "User-Agent",
+            value: "VertexSuite",
+            description: "",
+            checked: true,
+          },
+          {
+            id: generateUniqueId(),
+            key: "Accept",
+            value: "*/*",
+            description: "",
+            checked: true,
+          },
+          {
+            id: generateUniqueId(),
+            key: "Accept-Encoding",
+            value: "gzip, deflate, br",
+            description: "",
+            checked: true,
+          },
+          {
+            id: generateUniqueId(),
+            key: "Connection",
+            value: "keep-alive",
+            description: "",
+            checked: true,
+          },
+          {
+            id: generateUniqueId(),
+            key: "",
+            value: "",
+            description: "",
+            checked: false,
+          },
+        ];  
+by default sbke liye save rhega. 
+
+2. jb body  type me change honge to local storage database collectionData me ek aur 
+
+ {
+        id: generateUniqueId(),
+        key: "Content-Type",
+        value: "multipart/form-data",
+        description: "",
+        checked: true,
+      }
+
+add krayenge ya remove krayenge
+
+3. aur jb koi nya row create  ya delete hoga to vo direct localStorage collectionData me add ya update hoga
+
+4.headerHidden component me table me localStorage cellectionData se hi table data show hoga 
+
+5. esme rowData pass bhi krna hoga jisse kon sa collection aur kon sa file request ke ander update krna hai ye pta chal ske
+
+ 

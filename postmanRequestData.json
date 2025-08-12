@@ -1,0 +1,554 @@
+{
+  "parentRowId": 1,
+  "parentRowName": "New Collection",
+  "childRowId": 1741784780205,
+  "fileName": "New Request",
+  "fileMethod": "GET",
+  "apiMethod": "GET",
+  "url": "http://localhost:5000/api/category_templates",
+  "headers": [
+    {
+      "Cache-Control": "no-cache",
+      "VertexSuite-Token": "1746877664694kfkwyplv0",
+      "User-Agent": "VertexSuite",
+      "Accept": "*/*",
+      "Accept-Encoding": "gzip, deflate, br",
+      "Connection": "keep-alive",
+      "Content-Type": "application/json"
+    }
+  ],
+  "urlText": "",
+  "bodyType": "none",
+  "authoriziedType": "noAuth",
+  "authData": {},
+  "rawType": "JSON",
+  "jsonData": {},
+  "headerParamsRows": [
+    [
+      {
+        "id": "17417848266879a78e10yg",
+        "key": "",
+        "value": "",
+        "description": "",
+        "checked": false
+      }
+    ]
+  ],
+  "errorLogs": [],
+  "headerHiddenRows": [
+    {
+      "id": "1741784780205amokjxgxn",
+      "key": "Cache-Control",
+      "value": "no-cache",
+      "description": "",
+      "checked": true
+    },
+    {
+      "id": "1741784780205aayrtd7q3",
+      "key": "VertexSuite-Token",
+      "value": "<calculated when request is sent>",
+      "description": "",
+      "checked": true
+    },
+    {
+      "id": "1741784780205szj145r5f",
+      "key": "User-Agent",
+      "value": "VertexSuite",
+      "description": "",
+      "checked": true
+    },
+    {
+      "id": "1741784780205n62d06r4s",
+      "key": "Accept",
+      "value": "*/*",
+      "description": "",
+      "checked": true
+    },
+    {
+      "id": "1741784780205czdj0ovk5",
+      "key": "Accept-Encoding",
+      "value": "gzip, deflate, br",
+      "description": "",
+      "checked": true
+    },
+    {
+      "id": "1741784780205mjycxci1k",
+      "key": "Connection",
+      "value": "keep-alive",
+      "description": "",
+      "checked": true
+    },
+    {
+      "id": "1741784780205asb9qv0k2",
+      "key": "",
+      "value": "",
+      "description": "",
+      "checked": false
+    }
+  ],
+  "bodyFormData": [],
+  "bodyEncoddedRows": [],
+  "responseData": [
+    {
+      "_id": "6778ec998c5c4a628671be42",
+      "title": "Onam Special Email Template",
+      "description": "Celebrate Onam with our specially designed email template.",
+      "image": "onam.jpg",
+      "temp_name": "Onam_Template",
+      "temp_id": "temp_001",
+      "temp_message": "template",
+      "temp_category": "marketing",
+      "temp_sub_category": "festival",
+      "temp_img_link": "onam.jpg",
+      "temp_tag": [
+        "festival",
+        "special"
+      ],
+      "temp_price": "free",
+      "temp_sector": "general"
+    },
+    {
+      "_id": "6778ec998c5c4a628671be43",
+      "title": "E-commerce Promo Template",
+      "description": "Boost your e-commerce sales with this promo template.",
+      "image": "ecommerce_promo.jpg",
+      "temp_name": "Ecommerce_Promo",
+      "temp_id": "temp_002",
+      "temp_message": "interactive",
+      "temp_category": "marketing",
+      "temp_sub_category": "spm",
+      "temp_img_link": "ecommerce_promo.jpg",
+      "temp_tag": [
+        "sales",
+        "promo"
+      ],
+      "temp_price": "paid",
+      "temp_sector": "e-commerce"
+    },
+    {
+      "_id": "6778ec998c5c4a628671be44",
+      "title": "Retail Sale Template",
+      "description": "Perfect for promoting your retail sales.",
+      "image": "retail_sale.jpg",
+      "temp_name": "Retail_Sale",
+      "temp_id": "temp_003",
+      "temp_message": "template",
+      "temp_category": "marketing",
+      "temp_sub_category": "retail",
+      "temp_img_link": "retail_sale.jpg",
+      "temp_tag": [
+        "retail",
+        "discount"
+      ],
+      "temp_price": "free",
+      "temp_sector": "retail"
+    },
+    {
+      "_id": "6778ec998c5c4a628671be45",
+      "title": "Healthcare Newsletter",
+      "description": "Stay connected with your patients using this template.",
+      "image": "healthcare.avif",
+      "temp_name": "Healthcare_Newsletter",
+      "temp_id": "temp_004",
+      "temp_message": "interactive",
+      "temp_category": "utility",
+      "temp_sub_category": "healthcare",
+      "temp_img_link": "healthcare.avif",
+      "temp_tag": [
+        "newsletter",
+        "health"
+      ],
+      "temp_price": "paid",
+      "temp_sector": "healthcare"
+    },
+    {
+      "_id": "6778ec998c5c4a628671be46",
+      "title": "Education Campaign",
+      "description": "Promote your educational services effectively.",
+      "image": "education_campaign.jpg",
+      "temp_name": "Education_Campaign",
+      "temp_id": "temp_005",
+      "temp_message": "template",
+      "temp_category": "marketing",
+      "temp_sub_category": "education",
+      "temp_img_link": "education_campaign.jpg",
+      "temp_tag": [
+        "education",
+        "promotion"
+      ],
+      "temp_price": "free",
+      "temp_sector": "education"
+    },
+    {
+      "_id": "6778ec998c5c4a628671be47",
+      "title": "Finance Update Template",
+      "description": "Keep your clients informed with finance updates.",
+      "image": "finance_update.webp",
+      "temp_name": "Finance_Update",
+      "temp_id": "temp_006",
+      "temp_message": "interactive",
+      "temp_category": "utility",
+      "temp_sub_category": "finance",
+      "temp_img_link": "finance_update.webp",
+      "temp_tag": [
+        "finance",
+        "update"
+      ],
+      "temp_price": "paid",
+      "temp_sector": "finance"
+    },
+    {
+      "_id": "6778ec998c5c4a628671be48",
+      "title": "Logistics Promo Template",
+      "description": "Promote your logistics services with style.",
+      "image": "logistics_promo.cms",
+      "temp_name": "Logistics_Promo",
+      "temp_id": "temp_007",
+      "temp_message": "template",
+      "temp_category": "marketing",
+      "temp_sub_category": "logistics",
+      "temp_img_link": "logistics_promo.cms",
+      "temp_tag": [
+        "logistics",
+        "promo"
+      ],
+      "temp_price": "free",
+      "temp_sector": "logistics"
+    },
+    {
+      "_id": "6778ec998c5c4a628671be49",
+      "title": "Real Estate Highlights",
+      "description": "Showcase your real estate properties.",
+      "image": "real_estate.jpg",
+      "temp_name": "Real_Estate_Highlights",
+      "temp_id": "temp_008",
+      "temp_message": "interactive",
+      "temp_category": "marketing",
+      "temp_sub_category": "real estate",
+      "temp_img_link": "real_estate.jpg",
+      "temp_tag": [
+        "real estate",
+        "properties"
+      ],
+      "temp_price": "paid",
+      "temp_sector": "real estate"
+    },
+    {
+      "_id": "6778ec998c5c4a628671be4a",
+      "title": "Travel & Tourism Email",
+      "description": "Entice customers to explore new destinations.",
+      "image": "tourism.jpg",
+      "temp_name": "Travel_Email",
+      "temp_id": "temp_009",
+      "temp_message": "template",
+      "temp_category": "marketing",
+      "temp_sub_category": "travel",
+      "temp_img_link": "tourism",
+      "temp_tag": [
+        "travel",
+        "tourism"
+      ],
+      "temp_price": "free",
+      "temp_sector": "travel"
+    },
+    {
+      "_id": "6778ec998c5c4a628671be4b",
+      "title": "Hospitality Campaign",
+      "description": "Promote your hospitality services.",
+      "image": "hospitality.png",
+      "temp_name": "Hospitality_Campaign",
+      "temp_id": "temp_010",
+      "temp_message": "interactive",
+      "temp_category": "marketing",
+      "temp_sub_category": "hospitality",
+      "temp_img_link": "hospitality.png",
+      "temp_tag": [
+        "hospitality",
+        "promotion"
+      ],
+      "temp_price": "paid",
+      "temp_sector": "hospitality"
+    },
+    {
+      "_id": "6778ec998c5c4a628671be4c",
+      "title": "Insurance Offer",
+      "description": "Share special offers for insurance products.",
+      "image": "insurance.jpg",
+      "temp_name": "Insurance_Offer",
+      "temp_id": "temp_011",
+      "temp_message": "template",
+      "temp_category": "utility",
+      "temp_sub_category": "insurance",
+      "temp_img_link": "insurance.jpg",
+      "temp_tag": [
+        "insurance",
+        "offer"
+      ],
+      "temp_price": "free",
+      "temp_sector": "insurance"
+    },
+    {
+      "_id": "6778ec998c5c4a628671be4d",
+      "title": "Automotive Promo",
+      "description": "Drive your automotive business forward.",
+      "image": "automotive_promo.jpg",
+      "temp_name": "Automotive_Promo",
+      "temp_id": "temp_012",
+      "temp_message": "interactive",
+      "temp_category": "marketing",
+      "temp_sub_category": "automotive",
+      "temp_img_link": "automotive_promo.jpg",
+      "temp_tag": [
+        "automotive",
+        "promotion"
+      ],
+      "temp_price": "paid",
+      "temp_sector": "automotive"
+    },
+    {
+      "_id": "6778ec998c5c4a628671be4e",
+      "title": "Festival Greetings",
+      "description": "Send festive greetings with this delightful template.",
+      "image": "festival_greetings.jpg",
+      "temp_name": "Festival_Greetings",
+      "temp_id": "temp_013",
+      "temp_message": "template",
+      "temp_category": "marketing",
+      "temp_sub_category": "festival",
+      "temp_img_link": "festival_greetings.jpg",
+      "temp_tag": [
+        "festival",
+        "greetings"
+      ],
+      "temp_price": "free",
+      "temp_sector": "general"
+    },
+    {
+      "_id": "6778ec998c5c4a628671be4f",
+      "title": "Job Alerts Template",
+      "description": "Notify candidates about job openings instantly.",
+      "image": "job_alert.png",
+      "temp_name": "Job_Alerts",
+      "temp_id": "temp_014",
+      "temp_message": "interactive",
+      "temp_category": "utility",
+      "temp_sub_category": "recruitment",
+      "temp_img_link": "job_alert.png",
+      "temp_tag": [
+        "jobs",
+        "alerts"
+      ],
+      "temp_price": "free",
+      "temp_sector": "hr"
+    },
+    {
+      "_id": "6778ec998c5c4a628671be50",
+      "title": "School Admission Template",
+      "description": "Facilitate smooth school admission processes.",
+      "image": "school_admission.avif",
+      "temp_name": "School_Admission",
+      "temp_id": "temp_015",
+      "temp_message": "template",
+      "temp_category": "marketing",
+      "temp_sub_category": "education",
+      "temp_img_link": "school_admission.avif",
+      "temp_tag": [
+        "education",
+        "admission"
+      ],
+      "temp_price": "paid",
+      "temp_sector": "education"
+    },
+    {
+      "_id": "6778ec998c5c4a628671be51",
+      "title": "Product Launch Template",
+      "description": "Announce your product launch in style.",
+      "image": "new_product.webp",
+      "temp_name": "Product_Launch",
+      "temp_id": "temp_016",
+      "temp_message": "template",
+      "temp_category": "marketing",
+      "temp_sub_category": "business",
+      "temp_img_link": "new_product.webp",
+      "temp_tag": [
+        "product",
+        "launch"
+      ],
+      "temp_price": "paid",
+      "temp_sector": "business"
+    },
+    {
+      "_id": "6778ec998c5c4a628671be52",
+      "title": "Service Reminder Template",
+      "description": "Remind customers about scheduled services.",
+      "image": "service_reminder.jpg",
+      "temp_name": "Service_Reminder",
+      "temp_id": "temp_017",
+      "temp_message": "interactive",
+      "temp_category": "utility",
+      "temp_sub_category": "customer service",
+      "temp_img_link": "service_reminder.jpg",
+      "temp_tag": [
+        "reminder",
+        "service"
+      ],
+      "temp_price": "free",
+      "temp_sector": "services"
+    },
+    {
+      "_id": "6778ec998c5c4a628671be53",
+      "title": "Event Invitation Template",
+      "description": "Invite guests with a professional event template.",
+      "image": "event_invitation.jpg",
+      "temp_name": "Event_Invitation",
+      "temp_id": "temp_018",
+      "temp_message": "template",
+      "temp_category": "marketing",
+      "temp_sub_category": "events",
+      "temp_img_link": "event_invitation.jpg",
+      "temp_tag": [
+        "event",
+        "invitation"
+      ],
+      "temp_price": "paid",
+      "temp_sector": "events"
+    },
+    {
+      "_id": "6778ec998c5c4a628671be54",
+      "title": "Real-Time Update Template",
+      "description": "Provide real-time updates to your clients.",
+      "image": "real_time_update.webp",
+      "temp_name": "RealTime_Updates",
+      "temp_id": "temp_019",
+      "temp_message": "interactive",
+      "temp_category": "utility",
+      "temp_sub_category": "updates",
+      "temp_img_link": "real_time_update.webp",
+      "temp_tag": [
+        "updates",
+        "real-time"
+      ],
+      "temp_price": "free",
+      "temp_sector": "it"
+    },
+    {
+      "_id": "6778ec998c5c4a628671be55",
+      "title": "Customer Feedback Template",
+      "description": "Collect valuable customer feedback effortlessly.",
+      "image": "customer_feedback.jpg",
+      "temp_name": "Customer_Feedback",
+      "temp_id": "temp_020",
+      "temp_message": "interactive",
+      "temp_category": "utility",
+      "temp_sub_category": "feedback",
+      "temp_img_link": "customer_feedback.jpg",
+      "temp_tag": [
+        "feedback",
+        "customer"
+      ],
+      "temp_price": "free",
+      "temp_sector": "customer service"
+    },
+    {
+      "_id": "678f4e91d3e50839f4689474",
+      "title": "Project Planning",
+      "description": "Establishing the budget, setting milestones, assessing risks, and solidifying tasks and assigning them to team members",
+      "image": "project_planning.png",
+      "temp_name": "Project_Planning",
+      "temp_id": "temp_021",
+      "temp_message": "interactive",
+      "temp_category": "marketing",
+      "temp_sub_category": "components",
+      "temp_img_link": "project_planning.png",
+      "temp_tag": [
+        "project",
+        "customer"
+      ],
+      "temp_price": "free",
+      "temp_sector": "project serice"
+    },
+    {
+      "_id": "678f501ed3e50839f4689475",
+      "title": "Product Catalog",
+      "description": "Create eye-catching materials for your next promotion.",
+      "image": "catalog.jpg",
+      "temp_name": "Product_Catalog",
+      "temp_id": "temp_022",
+      "temp_message": "interactive",
+      "temp_category": "marketing",
+      "temp_sub_category": "catalog",
+      "temp_img_link": "catalog.jpg",
+      "temp_tag": [
+        "product",
+        "customer"
+      ],
+      "temp_price": "paid",
+      "temp_sector": "product serice"
+    },
+    {
+      "_id": "678f50a2d3e50839f4689476",
+      "title": "Authentication",
+      "description": "Enables businesses to authenticate users",
+      "image": "authentication.jpg",
+      "temp_name": "Authentication",
+      "temp_id": "temp_023",
+      "temp_message": "interactive",
+      "temp_category": "authentication",
+      "temp_sub_category": "authentication",
+      "temp_img_link": "authentication.jpg",
+      "temp_tag": [
+        "product",
+        "customer"
+      ],
+      "temp_price": "paid",
+      "temp_sector": "product service"
+    },
+    {
+      "_id": "678f520dd3e50839f4689477",
+      "title": "Product Carousel",
+      "description": "Explore professionally designed carousel templates",
+      "image": "carousel.avif",
+      "temp_name": "Product_Carousel",
+      "temp_id": "temp_024",
+      "temp_message": "interactive",
+      "temp_category": "carousel",
+      "temp_sub_category": "media card carousel,product card carousel,carousel",
+      "temp_img_link": "carousel.avif",
+      "temp_tag": [
+        "product",
+        "customer"
+      ],
+      "temp_price": "paid",
+      "temp_sector": "product service"
+    },
+    {
+      "_id": "678f532ad3e50839f4689478",
+      "title": "LTO",
+      "description": "Grow your business with custom LTO templates",
+      "image": "lto.jpg",
+      "temp_name": "LTO",
+      "temp_id": "temp_025",
+      "temp_message": "lto",
+      "temp_category": "marketing",
+      "temp_sub_category": "lto,coupon",
+      "temp_img_link": "lto.jpg",
+      "temp_tag": [
+        "product",
+        "customer"
+      ],
+      "temp_price": "paid",
+      "temp_sector": "product service"
+    }
+  ],
+  "responseTime": 253,
+  "lastCallTime": "3/12/2025, 6:37:08 PM",
+  "statusCode": 200,
+  "responseSize": "10.13 KB",
+  "paramsMenu": false,
+  "authorizationMenu": false,
+  "headersMenu": false,
+  "bodyMenu": true,
+  "scriptsMenu": false,
+  "settingsMenu": false,
+  "errorMsg": null
+}

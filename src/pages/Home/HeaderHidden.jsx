@@ -1,0 +1,213 @@
+import React, { useEffect, useState } from "react";
+import {
+  Stack,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Checkbox,
+  IconButton,
+  TextField,
+} from "@mui/material";
+import { FaEllipsisH } from "react-icons/fa";
+import { MdCheckBox, MdCheckBoxOutlineBlank } from "react-icons/md";
+import { RiDeleteBin5Line } from "react-icons/ri";
+
+// Function to generate a unique ID for each row
+const generateUniqueId = () =>
+  Date.now() + Math.random().toString(36).substr(2, 9); // Unique ID generation method
+
+const HeaderHidden = ({
+  headerData,
+  headerJsonData,
+  setHeaderJsonData,
+  bodyType,
+  raw,
+  rowData,
+  headerHiddenRows,
+}) => {
+  const [selectedRows, setSelectedRows] = useState([]); // Lifted state
+
+  const [rows, setRows] = useState([]);
+  useEffect(() => {
+    setRows(headerHiddenRows);
+  }, [headerHiddenRows]);
+
+  // console.log("headerHiddenRows__HeaderHiddenCom:--------------------->>>>", headerHiddenRows);
+  // console.log(
+  //   "headerRowsData__HeaderHiddenCom:--------------------->>>>",
+  //   rows
+  // );
+  // console.log("raw:--------------------->>>>", raw);
+  // console.log("headerData111:--------------------->>>>", headerData);
+  // Load data from localStorage if available, else use default rows
+
+  const [selectAll, setSelectAll] = useState(false);
+  const [queryString, setQueryString] = useState("");
+
+  // Handle adding a new blank row when typing in the last row content-type
+  const handleChange = (e, rowId, column) => {
+    const newRows = rows.map((row) =>
+      row.id === rowId ? { ...row, [column]: e.target.value } : row
+    );
+    setRows(newRows);
+
+    // Check if last row is modified, then add a new row
+    const lastRow = rows[rows.length - 1];
+    if (lastRow.key || lastRow.value || lastRow.description) {
+      setRows([
+        ...newRows,
+        {
+          id: generateUniqueId(),
+          key: "",
+          value: "",
+          description: "",
+          checked: false,
+        },
+      ]);
+    }
+  };
+
+  // Handle deleting a row
+  const handleDelete = (rowId) => {
+    setRows(rows.filter((row) => row.id !== rowId));
+  };
+
+  // Handle the checkbox change for individual rows
+  const handleCheckboxChange = (e, rowId) => {
+    const newRows = rows.map((row) =>
+      row.id === rowId ? { ...row, checked: e.target.checked } : row
+    );
+    setRows(newRows);
+  };
+
+  // Handle "Select All" checkbox change
+  const handleSelectAll = (e) => {
+    const newSelectAll = e.target.checked;
+    setSelectAll(newSelectAll);
+    setRows(rows.map((row) => ({ ...row, checked: newSelectAll })));
+  };
+
+  useEffect(() => {
+    localStorage.setItem("headerHiddenRows", JSON.stringify(rows));
+    // setHeaderHiddenData(rows);
+  }, [rows]);
+
+  const selectedRows1 = rows.filter((row) => row.checked);
+
+  //   console.log("selectedRows:=============>>>", selectedRows1);
+
+  // Avoid infinite loops by checking if selectedRows has changed
+  useEffect(() => {
+    if (JSON.stringify(selectedRows1) !== JSON.stringify(selectedRows)) {
+      setSelectedRows(selectedRows1);
+    }
+    if (JSON.stringify(selectedRows1) !== JSON.stringify(headerJsonData)) {
+      setHeaderJsonData(selectedRows1);
+    }
+  }, [
+    selectedRows1,
+    selectedRows,
+    setSelectedRows,
+    headerJsonData,
+    setHeaderJsonData,
+  ]);
+
+  //   console.log("Query String:", `?${queryString}`);
+
+  // console.log("selectedRows121:------------->>>", selectedRows);
+  return (
+    <Stack sx={{ display: "flex", flexDirection: "column", width: "100%" }}>
+      <TableContainer>
+        <Table>
+          <TableHead>
+            <TableRow>
+              <TableCell padding="checkbox">
+                <Checkbox
+                  checked={selectAll}
+                  onChange={handleSelectAll}
+                  icon={<MdCheckBoxOutlineBlank />}
+                  checkedIcon={<MdCheckBox />}
+                />
+              </TableCell>
+              <TableCell>Key</TableCell>
+              <TableCell>Value</TableCell>
+              <TableCell>Description</TableCell>
+              <TableCell>Action</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {rows.map((row, index) => {
+              const isContentTypeRow = row.key === "Content-Type";
+              return (
+                // Conditionally render the seven rows based on headerData
+                !headerData || isContentTypeRow || index >= 6 ? (
+                  <TableRow key={row.id}>
+                    <TableCell padding="checkbox">
+                      <Checkbox
+                        checked={row.checked}
+                        onChange={(e) => handleCheckboxChange(e, row.id)}
+                        icon={<MdCheckBoxOutlineBlank />}
+                        checkedIcon={<MdCheckBox />}
+                        disabled={index < 2}
+                      />
+                    </TableCell>
+                    <TableCell>
+                      <TextField
+                        size="small"
+                        value={row.key}
+                        onChange={(e) => handleChange(e, row.id, "key")}
+                        fullWidth
+                        disabled={index < 6} // Disable the input for the first 6 rows
+                        placeholder="Key"
+                      />
+                    </TableCell>
+                    <TableCell>
+                      <TextField
+                        size="small"
+                        value={row.value}
+                        onChange={(e) => handleChange(e, row.id, "value")}
+                        fullWidth
+                        disabled={index < 6} // Disable the input for the first 6 rows
+                        placeholder="Value"
+                      />
+                    </TableCell>
+                    <TableCell>
+                      <TextField
+                        size="small"
+                        value={row.description}
+                        onChange={(e) => handleChange(e, row.id, "description")}
+                        fullWidth
+                        disabled={index < 6} // Disable the input for the first 6 rows
+                        placeholder="Description"
+                      />
+                    </TableCell>
+                    <TableCell>
+                      {index === rows.length - 1 ? (
+                        <></>
+                      ) : (
+                        // <IconButton onClick={() => handleDelete(row.id)}>
+                        //   <RiDeleteBin5Line />
+                        // </IconButton>
+                        index >= 6 && // Only show delete button for rows with index >= 6
+                        !isContentTypeRow && (
+                          <IconButton onClick={() => handleDelete(row.id)}>
+                            <RiDeleteBin5Line />
+                          </IconButton>
+                        )
+                      )}
+                    </TableCell>
+                  </TableRow>
+                ) : null
+              );
+            })}
+          </TableBody>
+        </Table>
+      </TableContainer>
+    </Stack>
+  );
+};
+
+export default HeaderHidden;

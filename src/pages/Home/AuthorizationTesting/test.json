@@ -1,0 +1,28 @@
+{
+    "name": "amit",
+    "age": "32",
+    "class": "11st",
+    "image": {
+      name: "heroImg33.jpg",
+      size: 33118,
+      type: "image/jpeg",
+      lastModified: 1739520279222,
+      lastModifiedDate: "2025-02-14T08:04:39.222Z",
+    },
+
+    "image2": {
+      name: "stack.png",
+      size: 33843,
+      type: "image/png",
+      lastModified: 1727071294894,
+      lastModifiedDate: "2024-09-23T06:01:34.894Z",
+    },
+    "image3": {
+      name: "stack.png",
+      size: 33843,
+      type: "image/png",
+      lastModified: 1727071294894,
+      lastModifiedDate: "2024-09-23T06:01:34.894Z",
+    }
+    
+  }
