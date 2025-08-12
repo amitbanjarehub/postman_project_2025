@@ -1,4 +1,5 @@
 {
+  "homepage": "https://github.com/amitbanjarehub/postman_project_2025.git",
   "name": "postman-vertexsuite",
   "version": "0.1.0",
   "private": true,
@@ -13,7 +14,10 @@
     "buffer": "^6.0.3",
     "cra-template": "1.2.0",
     "fs": "^0.0.1-security",
+    "gh-pages": "^6.3.0",
+    "install": "^0.13.0",
     "lodash.debounce": "^4.0.8",
+    "npm": "^11.5.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.4.0",
@@ -23,6 +27,8 @@
     "styled-components": "^6.1.15"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
